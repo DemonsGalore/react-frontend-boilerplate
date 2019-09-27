@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { Burger, Footer, Header, Navigation } from './components/layout';
+import { Burger, Footer, Header, Navigation } from './layout';
 import GlobalStyles from './global';
 import { theme } from './theme';
 import { useOutsideClick } from './hooks';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const node = useRef();
   useOutsideClick(node, () => setMenuOpen(false));
 

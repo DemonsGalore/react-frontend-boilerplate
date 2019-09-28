@@ -17,5 +17,11 @@ export default createGlobalStyle`
   }
   main {
     display: flex;
+    flex-grow: 1;
+  }
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 `;

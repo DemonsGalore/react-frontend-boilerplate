@@ -25,6 +25,6 @@ export const StyledSideMenu = styled.nav`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 20rem;
+    width: 24rem;
   }
 `;

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 
 import { Burger, Footer, Header, Navigation, SideMenu } from './layout';
-import { About, Contact, Home, Imprint, NotFound, PrivacyPolicy } from './pages';
+import { About, Blog, Contact, Home, Imprint, NotFound, PrivacyPolicy } from './pages';
 import GlobalStyles from './global';
 import { theme } from './theme';
 // import { useOutsideClick } from './hooks';
@@ -29,6 +29,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/blog" component={Blog} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/imprint" component={Imprint} />
             <Route exact path="/privacy-policy" component={PrivacyPolicy} />

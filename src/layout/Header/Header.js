@@ -5,7 +5,7 @@ import { StyledHeader } from './Header.styled';
 const Header = ({ isMobile }) => {
   return (
     <StyledHeader isMobile={isMobile}>
-      <NavLink to="/"><h1>SITE</h1></NavLink>
+      <NavLink to="/"><h1>LOGO</h1></NavLink>
     </StyledHeader>
   );
 };

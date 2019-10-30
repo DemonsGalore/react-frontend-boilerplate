@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0.75rem;
-  width: 1.75rem;
-  height: 1.75rem;
   background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
   z-index: 10;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
+  }
 
   &:focus {
     outline: none;
@@ -20,7 +23,7 @@ export const StyledBurger = styled.button`
 
   div {
     height: 0.25rem;
-    background: ${({ theme, menuOpen }) => menuOpen ? theme.primaryLight : theme.primaryDark};
+    background: ${({ theme, menuOpen }) => menuOpen ? theme.primaryLight : theme.primary};
     border-radius: 0.5rem;
     transition: all 0.3s linear;
     position: relative;

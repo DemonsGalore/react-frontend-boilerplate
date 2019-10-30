@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PrivacyPolicy = props => {
+const PrivacyPolicy = () => {
   return (
     <h1>Privacy Policy</h1>
   );

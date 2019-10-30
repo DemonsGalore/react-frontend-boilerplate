@@ -5,7 +5,7 @@ export const StyledBurger = styled.button`
   background: transparent;
   border: none;
   padding: 0;
-  z-index: 10;
+  z-index: 30;
 
   span {
     display: flex;
@@ -25,7 +25,7 @@ export const StyledBurger = styled.button`
     height: 0.25rem;
     background: ${({ theme, menuOpen }) => menuOpen ? theme.primaryLight : theme.primary};
     border-radius: 0.5rem;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
     position: relative;
     transform-origin: 1px;
 

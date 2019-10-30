@@ -5,9 +5,10 @@ import { StyledSideMenu } from './SideMenu.styled';
 
 const SideMenu = ({ menuOpen, setMenuOpen }) => {
   return (
-    <StyledSideMenu menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+    <StyledSideMenu menuOpen={menuOpen} onClick={() => setMenuOpen(false)}>
       <ul>
         <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/imprint">Imprint</NavLink></li>
         <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>

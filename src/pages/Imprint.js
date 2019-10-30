@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Imprint = props => {
+const Imprint = () => {
   return (
     <h1>Imprint</h1>
   );

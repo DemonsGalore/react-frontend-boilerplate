@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 
-import { Burger, Footer, Header, Navigation, SideMenu } from './layout';
+import { Backdrop, Burger, Footer, Header, Navigation, SideMenu } from './layout';
 import { About, Blog, Contact, Home, Imprint, NotFound, PrivacyPolicy } from './pages';
 import GlobalStyles from './global';
 import { theme } from './theme';
@@ -23,8 +23,9 @@ const App = () => {
         <GlobalStyles />
         {isMobile && <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
         {!isMobile && <Navigation />}
-        <Header isMobile={isMobile} />
+        <Header />
         {isMobile && <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+        {isMobile && <Backdrop menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
         <main>
           <Switch>
             <Route exact path="/" component={Home} />

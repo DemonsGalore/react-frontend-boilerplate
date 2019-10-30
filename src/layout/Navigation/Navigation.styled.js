@@ -40,12 +40,12 @@ export const StyledNavigation = styled.nav`
     display: flex;
     top: 0;
     margin-top: 3rem;
-    margin-left: -1rem;
+    margin-left: -0.5rem;
     flex-direction: column;
     height: 12rem;
     transition: opacity 0.3s ease;
     box-shadow: ${({ theme }) => theme.shadowTwo};
-    visibility: invisible;
+    visibility: hidden;
     opacity: 0;
   }
 

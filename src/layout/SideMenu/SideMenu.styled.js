@@ -9,7 +9,8 @@ export const StyledSideMenu = styled.nav`
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+  transition: transform 0.4s ease;
   transform: ${({ menuOpen }) => menuOpen ? 'translateX(0)' : 'translateX(-100%)'};
   
   ul {
@@ -24,6 +25,6 @@ export const StyledSideMenu = styled.nav`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 20rem;
   }
 `;

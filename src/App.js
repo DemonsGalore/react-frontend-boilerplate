@@ -7,13 +7,9 @@ import { Backdrop, Burger, Footer, Header, Navigation, SideMenu } from './layout
 import { About, Blog, Contact, Home, Imprint, NotFound, PrivacyPolicy } from './pages';
 import GlobalStyles from './global';
 import { theme } from './theme';
-// import { useOutsideClick } from './hooks';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  //const node = useRef();
-  //useOutsideClick(node, () => setMenuOpen(false));
 
   const isMobile = useMediaQuery({ query: '(max-width: ' + theme.mobile + ')' });
 
@@ -23,9 +19,9 @@ const App = () => {
         <GlobalStyles />
         {isMobile && <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
         {!isMobile && <Navigation />}
-        <Header />
         {isMobile && <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
         {isMobile && <Backdrop menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+        <Header />
         <main>
           <Switch>
             <Route exact path="/" component={Home} />

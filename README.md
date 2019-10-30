@@ -1,5 +1,5 @@
 # react-frontend-boilerplate
 
-- media querys for other screen sizes in app.js
+build with react, styled-components, webfontloader, fontawesome-icons
 
-- useOutsideClick not used
+- media querys for other screen sizes in app.js
